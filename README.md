@@ -174,7 +174,7 @@ New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\Downloads" -Name "edge.e
 **Check that** `mshta.exe` **cannot run HTA files:**
 * Press ⊞ Win \+ R and paste in
 ```shell
-mshta.exe vbscript:Execute("msgbox(""This should not execute.""):close")
+mshta.exe vbscript:Execute("msgbox(""test""):close")
 ```
 * You should receive an applocker error
 
